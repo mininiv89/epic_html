@@ -1,0 +1,663 @@
+
+/* Общие стили */
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('fonts/pt_sans-web-regular-webfont.eot');
+    src: url('fonts/pt_sans-web-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pt_sans-web-regular-webfont.woff2') format('woff2'),
+         url('fonts/pt_sans-web-regular-webfont.woff') format('woff'),
+         url('fonts/pt_sans-web-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Italic';
+    src: url('fonts/pt_sans-web-italic-webfont.eot');
+    src: url('fonts/pt_sans-web-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pt_sans-web-italic-webfont.woff2') format('woff2'),
+         url('fonts/pt_sans-web-italic-webfont.woff') format('woff'),
+         url('fonts/pt_sans-web-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Bold';
+    src: url('fonts/pt_sans-web-bold-webfont.eot');
+    src: url('fonts/pt_sans-web-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pt_sans-web-bold-webfont.woff2') format('woff2'),
+         url('fonts/pt_sans-web-bold-webfont.woff') format('woff'),
+         url('fonts/pt_sans-web-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class*="grid-"] { 
+	float: left; 
+	padding: 15px; 
+	box-sizing: border-box;
+}
+.row {    
+	margin-left: -15px;  
+	margin-right: -15px;
+}
+
+.row:after ,.clearfix:after {
+	content:""; 
+	display: 
+	block; 
+	clear: both;
+}
+
+.pull-right {float:right}  
+.pull-left {float:left}
+.text-right {text-align:right;} 
+.text-center {text-align:center;}
+.inline-block {display: inline-block;} 
+.inline {display: inline}
+.container{ 
+	width: 960px; 
+	margin: 0 auto;
+}
+.grid-1 {width: 8.33%;}
+.grid-2 {width: 16.66%;}
+.grid-3 {width: 25%;}
+.grid-4 {width: 33.33%;}
+.grid-5 {width: 41.66%;}
+.grid-6 {width: 50%;}
+.grid-7 {width: 58.33%;}
+.grid-8 {width: 66.66%;}
+.grid-9 {width: 75%;}
+.grid-10 {width: 83.11%;}
+.grid-11 {width: 91.66%;}
+.grid-12 {width: 100%;}
+
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+
+b {
+	font-family: "PT Sans Bold", sans-serif;
+	font-weight: bold;
+}
+
+.line {
+	padding-bottom: 15px;
+	position: relative;
+}
+
+.line:after {
+	content: "";
+	width: 100%;
+	height: 15px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	background-image: linear-gradient(135deg, #ffcd34 35%, #000 35%, #000 66%, #ffcd34 66%);
+	background-size: 25px 15px;
+	background-position: -10px;
+}
+/* Обшие стили */
+/* Стили header */
+
+.header {
+	background-color: #fecc46;
+	line-height: 70px;
+}
+
+.header-logo {
+	display: inline-block;
+	font-size: 24px;
+	text-decoration: none;
+	color: #000;
+}
+
+.logo-img {
+	vertical-align: middle;
+	margin-right: 5px;	
+}
+
+.header-navigation ul li {
+	display: inline-block;
+}
+
+.header-navigation a {
+	display: inline-block;
+	line-height: 45px;
+	text-decoration: none;
+	color: #000;
+	padding: 0 17px;
+}
+
+.header-navigation a:hover {
+	background-color: #fee08a;
+}
+
+a.call-back {
+	background-color: #fee08a;	
+}
+
+a.call-back:hover {
+	background-color: #fff;	
+}
+
+/* Конец стилей header */
+
+/* Стили main */
+/* Стили promo */
+
+.promo {
+	background-image: url(../img/bg-promo.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 461px;	
+}
+.promo-color {
+	background-color: rgba(17, 47, 75, 0.7);
+	min-height: 461px;	
+}
+
+.promo-item {
+	display: block;
+	padding-top: 140px;
+	text-align: center;
+	margin: auto;
+	width: 700px;
+	color: #fff;
+}
+
+.promo-slogan {
+	font-size: 44px;
+	text-transform: uppercase;
+	padding-bottom: 40px;
+	font-weight: bold;
+	font-family: "SP Sans Bold", sans-serif;
+}
+
+.promo-text {
+	font-size: 20px;	
+	padding-bottom: 50px;
+}
+a.promo-to-catalog {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	border: 2px solid  #fecc46;
+	padding: 14px 77px 14px 12px;
+	position: relative;
+}
+
+a.promo-to-catalog:after {
+	content: "";
+	background-image: url(../img/icon-catalog.svg);
+	height: 19px;
+	width: 13px;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 13px;
+}
+
+a.promo-to-catalog:hover {
+	opacity: 0.7;
+}
+/* Конец стилей promo */
+/* Стили form-order */
+
+.form-order {
+	background-color: #202e3a;
+	padding: 30px 0;
+}
+
+.form-order-text {
+	font-size: 24px;
+	color: #fecc46;
+	padding-bottom: 30px;
+}
+
+.order input, .order select {
+	vertical-align: middle;
+	background-color: #202e3a;
+	border: 1px solid  #fecc46;
+	line-height: 20px;
+	height: 40px;
+	font-size: 16px;
+	color: #fff;
+	padding: 0 15px;
+	border-radius: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 23%;
+	margin-right: 20px;
+}
+
+input.submit {
+	background-color: #fecc46;
+	cursor: pointer;
+	margin-right: 0;
+}
+
+.order select {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: button;
+	background-color: #202e3a;
+	background-image: url('../img/icon-select.svg');
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	border-radius: 0px;
+	width: 23%;
+}
+
+
+.order input::-webkit-input-placeholder {color: #fff;}
+.order input:-moz-placeholder {color: #fff;}
+
+.order input:focus, .order select:focus {
+	outline: none;
+	background-color: #2a3c4d;
+}
+
+/* Конец стилей form-order */
+/* Стили adbantages */
+
+.adv-item {
+	padding: 30px 5px 30px 55px;
+	background-repeat: no-repeat;
+	background-position: 0px 32px;
+}
+
+.adv-1 {
+	background-image: url(../img/icon-adv-1.svg);	
+}
+
+.adv-2 {
+	background-image: url(../img/icon-adv-2.svg);	
+}
+
+.adv-3 {
+	background-image: url(../img/icon-adv-3.svg);	
+}
+
+.adv-4 {
+	background-image: url(../img/icon-adv-4.svg);	
+}
+
+.adv-text {
+	font-size: 13px;
+	line-height: 15px; 
+}
+/* Конец стилей adbantages */
+
+/* Стили catalog-main */
+
+.catalog-main {
+	padding: 20px 0 35px;
+	background-color: #f3f3f3;
+}
+
+.h2-title {
+	font-size: 26px;
+	font-weight: bold;
+	font-family: "PT Sans Bold", sans-serif;
+	padding-bottom: 20px;
+}
+
+.catalog-main-item a {
+	color: #202e3b;
+	line-height: 38px;
+}
+
+.catalog-main-item a:hover {
+	text-decoration: none;
+}
+
+.catalog-main-special {
+	width: 100%;
+	font-size: 16px;
+	line-height: 36px;
+}
+
+.catalog-main-special th {
+	padding-left: 10px;
+	text-align: left;
+	font-weight: bold;
+	font-family: "PT Sans Bold", sans-serif;
+}
+
+.table-title {
+	background-color: #dfdfdf;
+}
+
+.catalog-main-special td {
+	padding-left: 10px;
+}
+
+.catalog-main-special tr:nth-child(2n+3){
+	background-color: #ffffff;
+
+}
+
+/* Конец стилей catalog-main */
+
+/* Стили Reviews */
+
+.reviews {
+	background-color: #202e3a;
+	padding: 20px 0px 40px;
+}
+
+.reviews-title {
+	color: #ffffff;
+}
+
+.reviews-list {
+	font-size: 18px;
+	color: #9e9e9e;
+}
+
+.reviews-list li {	
+	margin-bottom: 20px;
+}
+
+.reviews-list li:last-child {
+	margin-bottom: 0;
+}
+
+.regular-title {
+	font-family: "PT Sans", sans-serif;
+	font-weight: normal;
+}
+
+.reviews-span {
+	font-size: 38px;
+	color: #efb041;
+	vertical-align: middle;
+	padding-right: 20px;
+	font-family: "PT Sans Bold", sans-serif;
+	font-weight: bold;
+}
+
+.reviews-comment {
+	margin-bottom: 30px;
+}
+
+.reviews-comment:last-child {
+	margin-bottom: 0;
+}
+
+.reviews-img {
+	width: 120px;
+	height: 120px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border:3px solid #f1b132;
+	border-radius: 5px;
+	float: left;
+	margin-right: 20px;
+}
+
+.reviews blockquote {
+	display: inline;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 22px;
+	font-style: italic;
+	font-family: "PT Sans Italic", sans-serif;
+}
+
+.reviews cite {
+	padding-top: 10px;
+	display: block;
+	color: #f1b132;
+	font-weight: bold;
+	font-style: normal;
+	font-family: "PT Sans Bold";
+}
+
+/* Конец стилей Reviews */
+
+/* Стили Карты */
+
+.map-main {
+	height: 500px;
+	width: 100%;
+}
+.map-contacts {
+	width: 100%;
+	min-height: 380px;
+	height: 100%;
+}
+
+/* Конец стилей карты */
+
+/* Стили subheader */
+
+.subheader {
+	padding: 30px 0;
+/*	line-height: 100px;*/
+	min-height: 100px;
+	width: 100%;
+	background-image: url(../img/bg-subheader.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.h1-title {
+	line-height: 45px;
+	color: #fecc46;
+	font-size: 26px;
+	display: inline;
+	padding-right: 10px;
+}
+
+.subheader-dis {
+	color: #fff;
+	font-size: 16px;
+	line-height: 45px;
+}
+
+.consultation {
+	display: inline-block;
+	line-height: 45px;
+	color: #202e3b;
+	background-color: #fecc46;
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: "PT Sans Bold", sans-serif;
+	padding: 0 20px;
+}
+.consultation:hover {
+	background-color: #fee08a;
+}
+
+/* Конец стилей subheader */
+
+/* Стили contacts */
+
+.contacts {
+	background-color: #f3f3f3;
+	padding: 20px 0;
+}
+
+.namber, .email {
+	font-family: "PT Sans Bold", sans-serif;
+	color: #000000;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 0 0 20px 40px;	
+	background-repeat: no-repeat;
+}
+
+.namber {
+	background-image: url(../img/icon-phone.svg);	
+}
+
+.email {
+	display: inline-block;
+	text-decoration: none;
+	background-image: url(../img/icon-email.svg);	
+}
+
+.email:hover {
+	text-decoration: underline;
+}
+
+.h2-contacts {
+	padding-bottom: 20px;
+}
+
+.contacts-form input, .contacts-form textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;	
+	font-size: 15px;
+	outline: none;
+	border: 1px solid #d5d5d5;
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #b0b0b0;
+}
+
+input.contacts-submit {
+	margin-bottom: 0;
+	line-height: 40px;
+	padding: 0;
+	border: 0; 
+	color: #fff;
+	background-color: #364b5f;
+	cursor: pointer;
+}
+
+input.contacts-submit:hover {
+	background-color: #45617c;
+}
+
+.contacts-form textarea {
+	resize: none;
+	height: 95px;
+}
+
+.contacts-form input:focus, .contacts-form textarea:focus {
+	color: #000;
+}
+
+/* Конец стилей contacts*/
+/* Стили reviews-contacts */
+
+.contacts-reviews {
+	padding: 25px 0;
+}
+
+.contacts-rev-img {
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	margin-bottom: 20px;
+}
+
+.contacts-reviews blockquote {
+	font-size: 14px;
+	font-family: "PT Sans Italic", sans-serif;
+	font-style: italic;
+}
+.contacts-reviews  cite {
+	margin-top: 10px;
+	font-weight: bold;
+	font-family: "PT Sans Bold", sans-serif;
+	display: block;
+	
+}
+
+/* Конец стилей reviews-contacts */
+
+/* Конец стилей main */
+
+/* Стили footer */
+
+.footer {
+	background-color: #202e3a;
+	line-height: 70px;
+}
+
+.footer-logo {
+	display: inline-block;
+	font-size: 24px;
+	text-decoration: none;
+	color: #fecc46;
+}
+
+.logo-img {
+	vertical-align: middle;
+	margin-right: 5px;	
+}
+
+.footer-navigation ul li {
+	display: inline-block;
+}
+
+.footer-navigation a {
+	display: inline-block;
+	line-height: 45px;
+	text-decoration: none;
+	color: #fff;
+	padding: 0 17px;
+}
+
+.footer-navigation a:hover {
+	color: #fee08a;
+}
+a.call-back-footer {
+	color: #fee08a;	
+}
+
+a.call-back-footer:hover {
+	background-color: #3a4e60;	
+}
+
+/* Конец стилец footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
