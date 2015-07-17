@@ -51,12 +51,17 @@
 	clear: both;
 }
 
+.display-block {
+	display: block;
+}
+
 .pull-right {float:right}  
 .pull-left {float:left}
 .text-right {text-align:right;} 
 .text-center {text-align:center;}
 .inline-block {display: inline-block;} 
-.inline {display: inline}
+.inline {display: inline;}
+.table {display: table;}
 .container{ 
 	width: 960px; 
 	margin: 0 auto;
@@ -457,6 +462,14 @@ input.submit {
 	box-sizing: border-box;
 }
 
+.subheader-title {
+	width: 65%;
+}
+
+.subheader-consultation {
+	width: 30%;
+}
+
 .h1-title {
 	line-height: 45px;
 	color: #fecc46;
@@ -468,12 +481,13 @@ input.submit {
 .subheader-dis {
 	color: #fff;
 	font-size: 16px;
-	line-height: 45px;
+	line-height: 20px;
 }
 
 .consultation {
-	display: inline-block;
+	display: block;
 	line-height: 45px;
+	text-align: center;
 	color: #202e3b;
 	background-color: #fecc46;
 	font-size: 18px;
@@ -482,8 +496,14 @@ input.submit {
 	font-family: "PT Sans Bold", sans-serif;
 	padding: 0 20px;
 }
+
 .consultation:hover {
 	background-color: #fee08a;
+}
+
+.consultation-info {
+	display: inline-block;
+	margin-top: 15px;
 }
 
 /* Конец стилей subheader */
@@ -559,6 +579,117 @@ input.contacts-submit:hover {
 }
 
 /* Конец стилей contacts*/
+/* Стили tehnika */
+
+.tehnika {
+	padding: 25px 0;
+	background-color: #f3f3f3;
+}
+
+.icon-logo {
+	background-image: url(../img/icon-tehnika.svg);
+	background-repeat: no-repeat;
+	background-size: 35px;
+	padding-left: 50px;
+}
+
+.catalog-tehnika {
+	margin-left: -15px;
+}
+
+.catalog-tehnika li {
+	line-height: 38px;
+	padding-left: 15px;
+	width: 220px;
+}
+
+.catalog-tehnika a {
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #354b60;
+	font-size: 16px;
+	margin-left: -10px;
+	padding-left: 10px;
+}
+
+.catalog-tehnika li:hover {
+	background-color: #f2c242;	
+}
+
+.catalog-tehnika a:hover {
+	font-weight: bold;
+	font-family: "PT Sans Bold", sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+
+.catalog-tehnika li.download-pdf {
+	margin-left: 15px;
+	margin-top: 20px;
+	background-color: #364b5f;
+	width: 205px;
+}
+
+.catalog-tehnika li.download-pdf a {
+	background-image: url(../img/icon-download.svg);
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	text-decoration: none;
+	color: #fff;
+	padding-left: 35px;
+}
+
+.catalog-tehnika li.download-pdf a:hover {
+	font-weight: normal;
+	font-family: "PT Sans", sans-serif;
+	background-color: #3a4e60;	
+}
+
+.test {
+	width: 100%;
+	display: table;
+}
+
+.item-cat-teh {
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+}
+
+.item-cat-teh:nth-child(3n+3) {
+	margin-right: 0;
+}
+
+.item-tehnika {
+	min-height: 400px;
+	position: relative;
+	background-color: #ffffff;
+		-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.title-tehnika {	
+	font-size: 21px;
+	font-weight: bold;
+	font-family: "PT Sans Bold", sans-serif;
+}
+
+.title-tehnika:first-child {
+	padding-bottom: 5px;
+}
+
+.tehnika-item-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/* Конец стилей tehnika */
 /* Стили reviews-contacts */
 
 .contacts-reviews {
@@ -588,7 +719,6 @@ input.contacts-submit:hover {
 /* Конец стилей reviews-contacts */
 
 /* Конец стилей main */
-
 /* Стили footer */
 
 .footer {
