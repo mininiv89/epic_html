@@ -647,29 +647,29 @@ input.contacts-submit:hover {
 	background-color: #3a4e60;	
 }
 
-.test {
-	width: 100%;
-	display: table;
-}
 
 .item-cat-teh {
 	float: left;
 	width: 32%;
 	margin-right: 2%;
+	position: relative;
 }
 
 .item-cat-teh:nth-child(3n+3) {
 	margin-right: 0;
 }
 
+.item-cat-teh:nth-child(n+4) {
+	margin-top: 2%;
+}
+
 .item-tehnika {
-	min-height: 400px;
-	position: relative;
+/*	min-height: 400px;*/
 	background-color: #ffffff;
 		-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	padding: 15px;
+	padding: 30px 30px 120px;
 }
 
 .title-tehnika {	
@@ -683,10 +683,50 @@ input.contacts-submit:hover {
 }
 
 .tehnika-item-img {
+	display: block;
+	margin: 30px auto;
+}
+
+.tehnika-price {
+	font-family: "PT Sans Bold", sans-serif;
+	font-weight: bold;
+	font-size: 27px;
+	padding-bottom: 25px;
+}
+
+.tehnika-price span {
+	font-size: 18px;
+}
+
+.button-item {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 0 30px 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.button-item a {
+	display: block;
+	width: 50%;
+	line-height: 35px;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+}
+
+.rent-tehnika {
+	float: left;
+	background-color: #f2c242;
+}
+
+.more-tehnika {
+	float: right;
+	background-color: #364b5f;
 }
 
 /* Конец стилей tehnika */
