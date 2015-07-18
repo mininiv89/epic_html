@@ -248,6 +248,7 @@ input.submit {
 	background-color: #fecc46;
 	cursor: pointer;
 	margin-right: 0;
+	color: #1d333f;
 }
 
 .order select {
@@ -255,7 +256,7 @@ input.submit {
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-	-webkit-appearance: button;
+	-webkit-appearance: none;
 	background-color: #202e3a;
 	background-image: url('../img/icon-select.svg');
 	background-repeat: no-repeat;
@@ -271,6 +272,10 @@ input.submit {
 .order input:focus, .order select:focus {
 	outline: none;
 	background-color: #2a3c4d;
+}
+
+.order select:focus {
+	border-radius: 0;
 }
 
 /* Конец стилей form-order */
@@ -531,6 +536,79 @@ input.submit {
 }
 
 /* Конец стилей subheader */
+
+/* Стили portfolio */
+
+.portfolio-fon {
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin: 10px auto;
+	min-height: 500px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 100px 0;
+}
+
+.portfolio-item-1 {
+	background-image: url(../img/bg-item-1.jpg);
+}
+
+.portfolio-item-2 {
+ background-image: url(../img/bg-item-2.jpg);
+}
+
+.portfolio-item-3 {	
+	background-image: url(../img/bg-item-3.jpg);
+}
+
+.portfolio-info {
+	width: 30%;
+	padding: 30px;
+	background-color: #fff;
+}
+
+.portfolio-h2-title {
+	font-family: "PT Sans Bold", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.portfolio-des {
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+.more-information {
+	display: inline-block;
+	text-decoration: none;
+	color: #1d333f;
+	font-family: "PT Sasn Bold", sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 40px;
+	padding: 0 35px 0 15px;
+	background-color: #fecc46;
+	position: relative;
+}
+
+.more-information:after {
+	content: "";
+	display: inline-block;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	background-image: url(../img/icon-strelka.svg);
+	position: absolute;
+	height: 20px;
+	width: 15px;
+	top: 25%;
+	right: 10px;
+}
+
+
+/* Конец стилей portfolio */
 
 /* Стили contacts */
 
@@ -838,7 +916,7 @@ input.contacts-submit:hover {
 	color: #eea73a;
 }
 
-/* Конец стилей каталог */
+/* Конец стилей catalog */
 /* Конец стилей main */
 /* Стили footer */
 
