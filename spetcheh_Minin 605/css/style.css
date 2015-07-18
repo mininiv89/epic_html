@@ -510,6 +510,25 @@ input.submit {
 	margin-top: 15px;
 }
 
+.portfolio-navigation ul li {
+	display: inline-block;
+		margin-right: 35px;
+}
+
+.portfolio-navigation ul li:last-child {
+	margin-right: 0;
+}
+
+.portfolio-navigation a {
+	color: #fff;
+	line-height: 45px;
+	font-size: 16px;
+}
+
+.portfolio-navigation a:hover {
+	text-decoration: none;
+}
+
 /* Конец стилей subheader */
 
 /* Стили contacts */
