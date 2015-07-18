@@ -301,6 +301,10 @@ input.submit {
 	font-size: 13px;
 	line-height: 15px; 
 }
+
+.catalog-advantages {
+	background-color: #f3f3f3;
+}
 /* Конец стилей adbantages */
 
 /* Стили catalog-main */
@@ -655,11 +659,11 @@ input.contacts-submit:hover {
 	position: relative;
 }
 
-.item-cat-teh:nth-child(3n+3) {
+.item-cat-teh:nth-of-type(3n+3) {
 	margin-right: 0;
 }
 
-.item-cat-teh:nth-child(n+4) {
+.item-cat-teh:nth-of-type(n+4) {
 	margin-top: 2%;
 }
 
@@ -690,12 +694,17 @@ input.contacts-submit:hover {
 .tehnika-price {
 	font-family: "PT Sans Bold", sans-serif;
 	font-weight: bold;
-	font-size: 27px;
+	font-size: 24px;
 	padding-bottom: 25px;
 }
 
-.tehnika-price span {
+.tehnika-price span.period {
 	font-size: 18px;
+}
+
+.tehnika-price span.before-price {
+	color: #cf252a;
+	text-decoration: line-through;
 }
 
 .button-item {
@@ -758,6 +767,58 @@ input.contacts-submit:hover {
 
 /* Конец стилей reviews-contacts */
 
+/* Стили catalog */
+
+.catalog {
+	background-color: #f3f3f3;
+	padding: 20px 0 10px;
+		font-size: 0;
+}
+
+.catalog-item {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 30px;
+	background-color: #fff;
+	display: inline-block;
+	width: 49%;
+	margin-right: 2%;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.catalog-item:nth-of-type(even) {
+	margin-right: 0;
+}
+
+.catalog-item:nth-of-type(n+3) {
+	margin-top: 2%;
+}
+
+.catalog-img {
+	display: block;
+	width: 45%;
+	float: left;
+}
+
+.catalog-item-info {
+	width: 45%;
+	float: right;
+}
+
+.h2-catalog-item {
+	font-size: 26px;
+	padding-bottom: 10px;
+}
+
+.catalog-price {
+	font-family: "PT Sans Bold", sans-serif;
+	font-weight: bold;
+	color: #eea73a;
+}
+
+/* Конец стилей каталог */
 /* Конец стилей main */
 /* Стили footer */
 
