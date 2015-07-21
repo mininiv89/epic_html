@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+include ./includes/variables.jade
+include ./includes/mixin.jade
+
+html(lang="en")
+	:verbatim
+	include ./includes/head.jade
+	body
+		//- header
+		include ./blocks/header/header.jade 
+
+		//- subheader
+		include ./blocks/subheader/subheader.jade
+			
+		//- advantages
+		include ./blocks/advantages/advantages.jade
+
+		//- short
+		include ./blocks/short/short.jade
+
+		//- gallery
+		include ./blocks/gallery/gallery.jade
+
+		//- get
+		include ./blocks/get/get.jade
+		
+		//- footer
+		include ./blocks/footer/footer.jade
+
+		//- Scripts
+		include ./includes/scripts.jade
+
+
+
+
+

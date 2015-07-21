@@ -1,0 +1,3 @@
+mixin menu 
+	ul: each text, id in menu
+		li: a(id="#{id}")(href="#") #{text}

@@ -1,0 +1,364 @@
+// Переменные
+
+@black: #2c2c2c;
+@white: #fff;
+@blue: #4399d4;
+@black-text: #444444;
+@gray: #cccccc;
+@gray-white: #f2f2f2;
+@gray-gray-white: #e6e6e6;
+
+// Конец переменных
+
+// Типовые стили
+
+@font-face {
+	font-family: 'robotomedium';
+	src: url('fonts/roboto-medium-webfont.eot');
+	src: url('fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/roboto-medium-webfont.woff2') format('woff2'),
+	url('fonts/roboto-medium-webfont.woff') format('woff'),
+	url('fonts/roboto-medium-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotoregular';
+	src: url('fonts/roboto-regular-webfont.eot');
+	src: url('fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+	url('fonts/roboto-regular-webfont.woff') format('woff'),
+	url('fonts/roboto-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+[class*="grid-"] { 
+	float: left; 
+	padding: 15px; 
+	box-sizing: border-box;
+}
+.row {    
+	margin-left: -15px;  
+	margin-right: -15px;
+}
+
+.row:after ,.clearfix:after {
+	content:""; 
+	display: 
+	block; 
+	clear: both;
+}
+
+.display-block {
+	display: block;
+}
+
+.pull-right {float:right}  
+.pull-left {float:left}
+.text-right {text-align:right;} 
+.text-center {text-align:center;}
+.inline-block {display: inline-block;} 
+.inline {display: inline;}
+.table {display: table;}
+.container{ 
+	width: 1140px; 
+	margin: 0 auto;
+}
+.grid-1 {width: 8.33%;}
+.grid-2 {width: 16.66%;}
+.grid-3 {width: 25%;}
+.grid-4 {width: 33.33%;}
+.grid-5 {width: 41.66%;}
+.grid-6 {width: 50%;}
+.grid-7 {width: 58.33%;}
+.grid-8 {width: 66.66%;}
+.grid-9 {width: 75%;}
+.grid-10 {width: 83.11%;}
+.grid-11 {width: 91.66%;}
+.grid-12 {width: 100%;}
+
+.bold {
+	font-family: robotomedium, sans-serif;
+	font-weight: 400;
+}
+
+.regular {
+	font-family: robotoregular, sans-serif;
+	font-weight: normal;
+}
+
+.box-border {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.h2-title {
+	.bold;
+	font-size: 32px;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 50px;
+
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 60px;
+		height: 6px;
+		background-color: @blue;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+.t-center {
+	text-align: center;
+
+	&:after {
+		right: 0;
+		margin: 0 auto;
+	}
+}
+
+// Конец типовых стилей
+
+body {
+	.regular;
+	color: @black-text;
+}
+
+// Стили Header/footer
+
+.header, .footer {
+	line-height: 70px;
+	background-color: @black;
+
+	a {
+		display: inline-block;
+		vertical-align: middle;
+		color: @white;
+		text-decoration: none;
+	}
+
+	.logo {
+		font-size: 22px;
+	}
+	
+	.navigation ul li {
+		display: inline-block;
+	}	
+
+	.navigation a {
+		display: inline-block;
+		font-size: 18px;
+		line-height: 45px;
+		padding: 0 20px;
+		.bold;
+
+		&:hover {
+			outline: 2px solid @white;
+		}
+	}	
+}
+// Конец стилей Header/footer
+// Стили subheader
+
+.subheader {
+	background-image: url(../img/bg-subheader.jpg);
+	background-size: cover;
+	background-position: top center;
+	min-height: 650px;
+	text-align: center;
+	position: relative;
+	margin-bottom: 60px;
+
+	.h1-title {
+		font-size: 66px;
+		color: @white;
+		padding: 180px 200px;
+	}
+	.more {
+		color: @white;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 18px;
+		line-height: 45px;
+		padding: 0 20px;
+		margin-bottom: 100px;
+		border: 2px solid @white;
+		position: relative;
+		.bold;
+
+		&:after {
+			position: absolute;
+			content: '';
+			display: inline-block;
+			background-size: 100%;
+			background-image: url(../img/icon-strelka.svg);
+			background-repeat: no-repeat;
+			height: 40px;
+			width: 20px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			bottom: -60px;
+
+		}
+	}
+}
+
+// Конец стилей subheader
+// Стили advantages
+
+.advantages {
+	font-size: 0;
+	padding: 0 0 60px;
+}
+
+.adv-item {
+	width: 25%;
+	.box-border;
+	display: inline-block;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+
+	&:last-of-type {
+		margin-right: 0px;
+	}
+
+	&:before {
+		display: inline-block;
+		content: '';
+		background-size: 100%;
+		background-repeat: no-repeat;
+		vertical-align: middle;
+
+	}
+
+	p {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 18px;
+		width: 50%;
+		padding-left: 30px;
+	}
+}
+
+.item-1:before {
+	background-image: url(../img/icon-adv-1.svg);
+	width: 50px;
+	height: 60px;
+}
+
+.item-2:before {
+	background-image: url(../img/icon-adv-2.svg);
+	width: 75px;
+	height: 30px;
+}
+
+.item-3:before {
+	background-image: url(../img/icon-adv-3.svg);
+	width: 65px;
+	height: 50px;
+}
+
+.item-4:before {
+	background-image: url(../img/icon-adv-4.svg);
+	width: 75px;
+	height: 35px;
+}
+// Конец стилей advantages
+// Стили short
+
+.short {
+	border-bottom: 1px solid @gray;
+	padding-bottom: 60px;
+	margin-bottom: 60px;
+	p {
+		font-size: 18px;
+		padding-bottom: 20px;
+	}
+}
+
+.video {
+	position: relative;
+	iframe {
+		display: inline-block;
+		width: 100%;
+		height: 340px;
+	}
+
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 700px;
+		height: 10px;
+		background-color: @gray-gray-white;
+		position: absolute;
+		bottom: -8px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+}
+// Конец стилей short
+// Стили gallery
+
+.gallery {
+	padding-bottom: 60px;
+	img {
+		width: 245px;
+		height: 245px;
+	}
+}
+
+// Конец стилей gallery
+// Стили get
+
+.get {
+	min-height: 500px;
+	width: 100%;
+	background-image: url(../img/bg-get.jpg);
+	background-position: 50% 100px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	&:after {
+		content: '';
+		display: inline-block;
+		background-image: url(../img/bg-line.png);
+		width: 1140px;
+		height: 176px;
+		position: absolute;
+		top: 150px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+}
+
+// Конец стилец get
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
