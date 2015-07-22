@@ -1,3 +1,22 @@
 mixin menu 
 	ul: each text, id in menu
 		li: a(id="#{id}")(href="#") #{text}
+
+
+mixin balon
+	ul
+		li
+			p Взлет
+			p.balon 1
+		li
+			p Набираем высоту
+			p.balon 2
+		li
+			p Летаем
+			p.balon 3
+		li
+			p Снижаемся
+			p.balon 4
+		li
+			p Садимся
+			p.balon 5

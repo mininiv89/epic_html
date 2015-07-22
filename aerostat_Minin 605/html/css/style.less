@@ -321,13 +321,14 @@ body {
 // Стили get
 
 .get {
-	min-height: 500px;
+	.bold;
+	height: 650px;
 	width: 100%;
 	background-image: url(../img/bg-get.jpg);
-	background-position: 50% 100px;
+	background-position: 50% 150px;
 	background-repeat: no-repeat;
-	background-size: 100%;
 	position: relative;
+	
 	&:after {
 		content: '';
 		display: inline-block;
@@ -335,10 +336,56 @@ body {
 		width: 1140px;
 		height: 176px;
 		position: absolute;
-		top: 150px;
+		top: 250px;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
+	}
+}
+
+.get-balon {
+	font-size: 0;
+
+ul {
+	background-color: green;
+}
+
+	ul li {
+		display: block;
+		float: left;
+		width: 20%;
+		text-align: center;
+		.box-border;
+		font-size: 18px;
+		padding: 0 40px;
+		height: 200px;
+		
+		&:nth-child(4n+1) {
+		margin-top: 180px;
+		}
+
+		&:nth-child(2n+2) {
+		margin-top: 130px;
+		}
+
+		&:nth-child(3) {
+		margin-top: 25px;
+		}
+
+		p:first-child {
+			padding-bottom: 15px;
+		}
+
+		.balon {
+			background-image: url(../img/icon-balon.svg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 45px;
+			height: 65px;
+			color: @white;
+			padding-top: 10px;
+			margin: 0 auto;
+		}
 	}
 }
 
